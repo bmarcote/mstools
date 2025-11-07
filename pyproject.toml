@@ -1,0 +1,17 @@
+[project]
+name = "mstools"
+version = "1.0b1"
+description = "Tools to work with Measurement Set (MS) files and data diagnostics"
+readme = "README.md"
+authors = [
+    { name = "Benito Marcote", email = "marcote@jive.eu" }
+]
+requires-python = ">=3.12"
+dependencies = ["numpy", "astropy", "rich", "rich-argparse", "blessed", "python-casacore"]
+
+[project.scripts]
+mstools = "mstools.main:main"
+
+[build-system]
+requires = ["uv_build>=0.8.20,<0.9.0"]
+build-backend = "uv_build"
